@@ -13,6 +13,9 @@ const images = [image_1,image_2, image_3, image_4, image_5, image_6, image_7]
 function App() {
   return (
     <div className="App">
+      <div>
+        <a href='https://github.com/SergeyGuns/brazzers-corousel'> https://github.com/SergeyGuns/brazzers-corousel</a>
+      </div>
       <BrazzersCorousel imageUrls={images} />
       <Run/>
       <Finger/>
