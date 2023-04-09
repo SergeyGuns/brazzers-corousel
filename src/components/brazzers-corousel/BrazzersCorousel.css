@@ -1,0 +1,19 @@
+.brazzers-corousel {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.brazzers-corousel__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+.brazzers-corousel__progress-bar {
+    position: absolute;
+    bottom: 5px;
+}
