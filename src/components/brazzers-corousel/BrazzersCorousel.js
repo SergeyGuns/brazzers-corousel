@@ -32,7 +32,7 @@ export function BrazzersCorousel({width=450,height=300, imageUrls=[], strokeColo
     }
 
     return <div onTouchStart={enterMouseHandler} onTouchEnd={leaveMouseHandler} onTouchMove={hoverHandler} onMouseMove={hoverHandler} onMouseEnter={enterMouseHandler} onMouseLeave={leaveMouseHandler} className='brazzers-corousel' style={{width, height}}>
-        {images.map((image, index) => <img width={width} style={{ backgroundColor: 'black', opacity: +(index <= showIndex), transition: 'all .2s'}} className='brazzers-corousel__image' src={image} key={image}/>)}
+        {images.map((image, index) => <img width={width} style={{ backgroundColor: 'black', opacity: +(index <= showIndex), transition: 'all .2s'}} className='brazzers-corousel__image' src={image} key={image + index}/>)}
         <svg className='brazzers-corousel__progress-bar' viewBox={`0 0 ${width} 5`}>
             <line x1='0' y1='0' y2='0' x2={width} strokeDasharray={`0 ${dashPadding/2} ` + imageUrls.map(()=> (width / imageUrls.length) - dashPadding + ` ${dashPadding}` ).join(' ') } stroke={strokeColor[0]} strokeWidth="5"/>
         </svg>
